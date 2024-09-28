@@ -5,7 +5,7 @@ This repository contains my solutions to the problems on the [CSES Problem Set](
 ## Progress
 
 - ⌛ Introductory Problems
-  - [x] [Weird Algorithm](introductory-problems/weird-algorithm/main.cpp)
+  - [x] [Weird Algorithm](introductory_problems/weird_algorithm/main.cpp)
 - ❌ Sorting and Searching
 - ❌ Dynamic Programming
 - ❌ Graph Algorithms
