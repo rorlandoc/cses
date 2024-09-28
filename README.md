@@ -8,6 +8,7 @@ This repository contains my solutions to the problems on the [CSES Problem Set](
   - [x] [Weird Algorithm](introductory_problems/weird_algorithm/main.cpp)
   - [x] [Missing Number](introductory_problems/missing_number/main.cpp)
   - [x] [Repetitions](introductory_problems/repetitions/main.cpp)
+  - [x] [Increasing Array](introductory_problems/increasing_array/main.cpp)
 - ❌ Sorting and Searching
 - ❌ Dynamic Programming
 - ❌ Graph Algorithms
