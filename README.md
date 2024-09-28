@@ -6,6 +6,7 @@ This repository contains my solutions to the problems on the [CSES Problem Set](
 
 - ⌛ Introductory Problems
   - [x] [Weird Algorithm](introductory_problems/weird_algorithm/main.cpp)
+  - [x] [Missing Number](introductory_problems/missing_number/main.cpp)
 - ❌ Sorting and Searching
 - ❌ Dynamic Programming
 - ❌ Graph Algorithms
