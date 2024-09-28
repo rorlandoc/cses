@@ -9,6 +9,7 @@ This repository contains my solutions to the problems on the [CSES Problem Set](
   - [x] [Missing Number](introductory_problems/missing_number/main.cpp)
   - [x] [Repetitions](introductory_problems/repetitions/main.cpp)
   - [x] [Increasing Array](introductory_problems/increasing_array/main.cpp)
+  - [x] [Permutations](introductory_problems/permutations/main.cpp)
 - ❌ Sorting and Searching
 - ❌ Dynamic Programming
 - ❌ Graph Algorithms
