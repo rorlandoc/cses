@@ -11,28 +11,6 @@ using namespace std;
 #define FOR(i, a, b) for (int i = a; i < b; i++)
 #define RFOR(i, a, b) for (int i = a; i >= b; i--)
 
-ll number_of_knight_attacks(ll row, ll col, ll grid_size)
-{
-    ll attacks = 0;
-    if ((row + 2) <= grid_size && (col + 1) <= grid_size)
-        attacks++;
-    if ((row + 1) <= grid_size && (col + 2) <= grid_size)
-        attacks++;
-    if ((row - 1) >= 1 && (col + 2) <= grid_size)
-        attacks++;
-    if ((row - 2) >= 1 && (col + 1) <= grid_size)
-        attacks++;
-    if ((row + 2) <= grid_size && (col - 1) >= 1)
-        attacks++;
-    if ((row + 1) <= grid_size && (col - 2) >= 1)
-        attacks++;
-    if ((row - 1) >= 1 && (col - 2) >= 1)
-        attacks++;
-    if ((row - 2) >= 1 && (col - 1) >= 1)
-        attacks++;
-    return attacks;
-}
-
 void solve()
 {
     int n;
@@ -42,28 +20,25 @@ void solve()
     for (int i = 2; i <= n; i++)
     {
         ll grid_size = i * i;
-        ll half_grid_size = i / 2;
         ll total_permutations = grid_size * (grid_size - 1) / 2;
-        ll total_attacks = 0;
-        ll total_attacks_center = 0;
-        for (ll r = 1; r <= half_grid_size; r++)
-        {
-            for (ll c = 1; c <= half_grid_size; c++)
-            {
-                total_attacks += number_of_knight_attacks(r, c, i);
-            }
-            if ((i % 2 != 0)) // handle middle cross of odd grid
-            {
-                total_attacks += number_of_knight_attacks(r, half_grid_size + 1, i);
-            }
-        }
-        if (i % 2 != 0) // handle middle square of odd grid
-        {
-            total_attacks_center += number_of_knight_attacks(half_grid_size + 1, half_grid_size + 1, i);
-        }
-        total_attacks = 2 * total_attacks + total_attacks_center / 2;
+        ll total_attacks = 4 * (i - 1) * (i - 2);
         cout << total_permutations - total_attacks << nl;
     }
+
+    // Explanation
+    //
+    // total_permutations -> 2-combinations of i*i=g
+    // g! / (2! * (g-2)!) = g * (g - 1) / 2
+    //
+    // Knigts attack each other in 2x3 and 3x2 sub-grids
+    // For each of these sub-grids there are 2 attack possibilities
+    //
+    // a 2x3 sub-grid can start at row 1, another at row 2 and so on until row i-1
+    //                can start at col 1, another at col 2 and so on until col i-2
+    // therefore there are (i-1)*(i-2) 2x3 sub-grids
+    // Equally there are (i-1)*(i-2) 3x2 sub-grids
+    //
+    // total_attacks = 2*n_2x3 + 2*n_3x2 = 4*(i-1)*(i-2)
 }
 
 int main()
