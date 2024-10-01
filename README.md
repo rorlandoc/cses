@@ -11,6 +11,7 @@ This repository contains my solutions to the problems on the [CSES Problem Set](
   - [x] [Increasing Array](introductory_problems/increasing_array/main.cpp)
   - [x] [Permutations](introductory_problems/permutations/main.cpp)
   - [x] [Number Spiral](introductory_problems/number_spiral/main.cpp)
+  - [x] [Two Knights](introductory_problems/two_knights/main.cpp)
 - ❌ Sorting and Searching
 - ❌ Dynamic Programming
 - ❌ Graph Algorithms
