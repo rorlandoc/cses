@@ -13,7 +13,8 @@ This repository contains my solutions to the problems on the [CSES Problem Set](
   - [x] [Number Spiral](introductory_problems/number_spiral/main.cpp)
   - [x] [Two Knights](introductory_problems/two_knights/main.cpp)
   - [x] [Two Sets](introductory_problems/two_sets/main.cpp)
-- ❌ Sorting and Searching
+- ⌛ Sorting and Searching
+  - [x] [Distinct Numbers](sorting_and_searching/distinct_numbers/main.cpp)
 - ❌ Dynamic Programming
 - ❌ Graph Algorithms
 - ❌ Range Queries
