@@ -15,6 +15,7 @@ This repository contains my solutions to the problems on the [CSES Problem Set](
   - [x] [Two Sets](introductory_problems/two_sets/main.cpp)
 - ⌛ Sorting and Searching
   - [x] [Distinct Numbers](sorting_and_searching/distinct_numbers/main.cpp)
+  - [x] [Apartments](sorting_and_searching/apartments/main.cpp)
 - ❌ Dynamic Programming
 - ❌ Graph Algorithms
 - ❌ Range Queries
